@@ -14,11 +14,11 @@ export default {
   data() {
     return {
       // 缩放层级
-      zoom: 16,
+      zoom: 13,
       //   定位中心点
       center: {
-        lon: 113.27,
-        lat: 23.13,
+        lon: 114.07,
+        lat: 22.53,
       },
     };
   },
