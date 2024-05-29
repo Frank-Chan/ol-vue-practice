@@ -14,6 +14,9 @@
     git subtree push --prefix dist origin gh-pages  # 将打包后的代码上传到github gh-pages分支上。
 ```
 
+* **dynamicComponent**——动态组件分支，实现地图页面和业务页面的标签切换
+
+
 ## Project setup
 ```
 npm install
