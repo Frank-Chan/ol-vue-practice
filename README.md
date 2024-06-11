@@ -19,6 +19,8 @@
 
 * **element**——基于动态分支组件派生，添加ElementPlus前端UI组件
 
+* **mapSwitcher**——底图切换：基于element分支派生，添底图切换组件，以GCJ02墨卡托投影坐标系为基准，实现常见互联网地图的无偏移切换
+
 
 ## Project setup
 ```
