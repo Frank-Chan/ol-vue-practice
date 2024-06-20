@@ -51,6 +51,11 @@ export default {
       selectedBaseMapID: "GDVecTile", //被选中的底图
       baseMaps: [
         {
+          url: require("@/assets/baseMapIcon/OSM.png"),
+          title: "OSM",
+          id: "OSM",
+        },
+        {
           url: require("@/assets/baseMapIcon/GDVecTile.png"),
           title: "高德-高清",
           id: "GDVecTile",

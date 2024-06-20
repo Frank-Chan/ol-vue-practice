@@ -3,6 +3,7 @@ import { Point } from 'ol/geom';
 import { DoubleClickZoom } from 'ol/interaction';
 import { containsCoordinate, containsExtent } from 'ol/extent';
 import { XYZ as XYZSource } from 'ol/source';
+import OSM from "ol/source/OSM";
 import TileGrid from 'ol/tilegrid/TileGrid.js';
 import TileLayer from 'ol/layer/Tile';
 import Layer from 'ol/layer/Layer.js';
@@ -323,6 +324,9 @@ GeoUtil.setBaseMap = function (baseMapID, withLabel = true, map = window.map) {
                     url: '//t{0-7}.tianditu.gov.cn/cia_w/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=cia&STYLE=default&TILEMATRIXSET=w&FORMAT=tiles&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&tk=3d983e72097bf0ed01b065e680cd8f88' //影像底图
                 });
             }
+            break;
+        case 'OSM':
+            source = new OSM()
             break;
         default:
             console.warn(`暂不支持类型为${baseMapID}的底图！`);
